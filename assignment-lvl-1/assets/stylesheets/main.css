@@ -1,0 +1,238 @@
+/* Resets */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* GLOBAL */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(36, 36, 46, 0.8),
+      rgba(37, 37, 39, 0.7)
+    ),
+    url(../media/joseph-kellner-g77rhnigSS0-unsplash.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+h1 {
+  font-size: 3rem;
+}
+p {
+  line-height: 1.5;
+}
+
+/* MAIN-SECTION */
+
+.col-1-2 {
+  width: 50%;
+  /* border: 1px solid; */
+  padding: 0 100px;
+}
+.col-2-2 {
+  width: 50%;
+  padding: 0 100px;
+}
+.col-1-2 h1 {
+  font-weight: bold;
+  color: rgb(221, 221, 221);
+  margin-bottom: 30px;
+}
+.col-1-2 p {
+  color: rgb(184, 184, 224);
+}
+.banner {
+  height: 40px;
+  /* border: 1px solid; */
+  margin: 100px 0 20px;
+  background-color: rgba(101, 92, 163, 0.5);
+  border-radius: 7px;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 10px;
+  color: white;
+}
+strong {
+  font-weight: bold;
+}
+form {
+  /* border: 1px solid; */
+  /* height: 500px; */
+  background: rgba(75, 122, 122, 0.5);
+  border-radius: 7px;
+  padding: 40px;
+}
+input {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+.btn {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgb(153, 255, 153);
+  font-family: 'Roboto Mono', monospace;
+}
+small {
+  font-size: 0.7rem;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: rgb(201, 201, 139);
+  opacity: 0.8;
+}
+span {
+  color: #ca0e0e;
+}
